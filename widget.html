@@ -1,0 +1,19 @@
+<div class="bg-white">
+	<h2 class="text-center">Tic Tac Toe</h2>
+  	<p><strong>Player 1 Piece: </strong> <i class="fas fa-times"></i></p>
+  	<p><strong>Player 2 Piece: </strong> <i class="far fa-circle"></i></p>
+  	<p>
+      <strong>Current Player 1: </strong><select id="{{namespace}}_player-1-list"><option value="">Select A Player</option></select> 
+      <button class="btn btn-success btn-sm" onclick="{{namespace}}.setPlayer1()">Save</button>
+      <br /><small id="{{namespace}}_player_1_name"></small>
+  	</p>
+  	<p>
+      <strong>Current Player 2: </strong>
+      <select id="{{namespace}}_player-2-list"><option value="">Select A Player</option></select> 
+      <button class="btn btn-success btn-sm" onclick="{{namespace}}.setPlayer2()">Save</button>
+      <br /><small id="{{namespace}}_player_2_name"></small>
+  </p>
+    <p><strong>Current Player Turn: </strong><span id="{{namespace}}_current_player"></span></p>
+  	<div><button onclick="{{namespace}}.resetGame()" class="btn btn-danger">Reset Game</button></div>
+  	<div id="{{namespace}}_tictactoe_board" class="mt-2 border" ></div>
+</div>
